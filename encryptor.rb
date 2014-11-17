@@ -8,4 +8,8 @@ class Encryptor
      'u' => 'h', 'v' => 'i', 'w' => 'j', 'x' => 'k',
      'y' => 'l', 'z' => 'm'}
   end
+
+  def encrypt(letter)
+  	cipher[letter]
+  end
 end
