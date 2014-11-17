@@ -20,8 +20,11 @@ class Encryptor
   	#encrypt the letters one by one gathering the results
   	results = []
   	letters.each do |letter|
-  	encrypted_letter = encrypted_letter(letter)
-  	results.push(encrypted_letter)
+  		encrypted_letter = encrypt_letter(letter)
+  		results.push(encrypted_letter)
+  	end
+
   	#join the results back together in one string
-  end
+  	results.join
+	end
 end
