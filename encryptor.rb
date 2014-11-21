@@ -15,8 +15,9 @@ end
   end
 
   def encrypt_letter(letter)
-  	lowercase_letter = letter.downcase
-  	cipher[lowercase_letter]
+    rotation = 13
+    cipher_for_rotation = cipher(rotation)
+    cipher_for_rotation[letter]
   end
 
   def encrypt(string)
