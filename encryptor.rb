@@ -12,13 +12,13 @@ end
   #    'u' => 'h', 'v' => 'i', 'w' => 'j', 'x' => 'k',
   #    'y' => 'l', 'z' => 'm'}
   # }
-  end
 
-  def encrypt_letter(letter)
-    rotation = 13
-    cipher_for_rotation = cipher(rotation)
-    cipher_for_rotation[letter]
-  end
+
+ def encrypt_letter(letter)
+  rotation = 13
+  cipher_for_rotation = cipher(rotation)
+  cipher_for_rotation[letter]
+end
 
   def encrypt(string)
 	letters = string.split("")
@@ -33,3 +33,4 @@ end
   	results.join
 	end
 end
+
